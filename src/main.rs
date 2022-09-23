@@ -18,7 +18,7 @@ async fn main() -> std::io::Result<()> {
     let addr="127.0.0.1:9999";
     info!("Start Server Address : {}", addr);
     info!("Server is starting .... ");
-    let naming_client = NamingClient::new_with_addrs("127.0.0.1:8848","dev".to_string(),None);
+    let naming_client = NamingClient::new_with_addrs("120.27.9.210:30008","dev".to_string(),None);
  
     let instance = Instance::new_simple("127.0.0.1",9999,"rust-nacos-demo","DEFAULT_GROUP");
     naming_client.register(instance);
